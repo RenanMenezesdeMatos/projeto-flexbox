@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 550px) and (max-width: 830px){
+    footer{
+        /*
+        background-color: green;
+        */
+    }
+    .container-box{
+        flex-wrap: wrap;
+        margin: 0px 25px;
+    }
+
+    /*
+    TENTATIVA DE NORMALIZAR OS ESPAÇOS QUE OCUPAM 100% DO VW
+    */
+    .fixed{
+        width: 100vw;
+    }
+    .covid{
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+    }
+    nav > .conteudo-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    menu{
+        display: none;
+    }
+    .box-circulo{
+        background-position: bottom right;
+        background-position-x: 110%;
+        background-position-y: 150%;
+    }
+    .box-triangulo{
+        background-position: bottom right;
+        background-position-x: 105%;
+        background-position-y: 110%;
+    }
+    .box-quadrado{
+        background-position: bottom right;
+        background-position-x: 105%;
+        background-position-y: 160%;
+    }
+    .box-container-section3{
+        display: block;
+        width: 450px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        margin: 8px;
+    
+    }
+    #barraca{
+        width: 430px;
+           }
+    #caneca{
+        width: 430px;
+    }
+    #mochila{
+        width: 430px;
+    }
+    .atendente {
+        position: absolute;
+        margin-left: calc(0% + 70px);
+        margin-top: calc(0% + 70px);
+        background-size: 270%;
+    }
+    .container_section04 {
+        min-width: 550px;
+    }
+}
+@media screen and (max-width: 550px){
+
+    footer{
+        /*
+        background-color: red;
+        */
+    }
+    .container-box{
+        flex-wrap: wrap;
+        margin: 0px 25px;
+    }
+
+    /*
+    TENTATIVA DE NORMALIZAR OS ESPAÇOS QUE OCUPAM 100% DO VW
+    */
+    .fixed{
+        width: 100vw;
+    }
+    .covid{
+        width: 100vw;
+    }
+    nav{
+        width: 100vw;
+    }
+    nav > .conteudo-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    menu{
+        display: none;
+    }
+    .box-circulo{
+        background-position: bottom right;
+        background-position-x: 110%;
+        background-position-y: 150%;
+    }
+    .box-triangulo{
+        background-position: bottom right;
+        background-position-x: 105%;
+        background-position-y: 110%;
+    }
+    .box-quadrado{
+        background-position: bottom right;
+        background-position-x: 105%;
+        background-position-y: 160%;
+    }
+    .box-container-section3{
+        display: block;
+        width: 360px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        margin: 8px;
+    
+    }
+    #barraca{
+        width: 360px;
+           }
+    #caneca{
+        width: 360px;
+    }
+    #mochila{
+        width: 360px;
+    }
+
+    .container_section04{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+ 
+    }
+    .container-atendente{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .atendente{
+        position: relative;
+        margin: 10px 10px 0px 10px;
+        background-size: 190%;
+        background-position: 50% 50%;
+        border-radius: 5px 5px 0px 0px;
+        height: 200px;
+        width: 80%;
+    }
+    .conteudo-principal{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-bottom: 60px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .conteudo-principal > h1 {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        font-size: 2.5rem;
+    }
+    .conteudo-principal > p {
+        line-height: 120%;
+        font-size: 0.9rem;
+        margin-left: auto;
+    }
+
+}

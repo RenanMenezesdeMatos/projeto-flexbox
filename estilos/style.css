@@ -10,14 +10,16 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html{
     width: 100vw;
 }
 body{
+    margin: auto;
     font-family: var(--fonte);
-    width: 100vw;
     overflow-x: hidden;
+    width: 100vw;
 }
 .fixed{
     z-index: 1;
@@ -45,8 +47,9 @@ nav{
 
 }
 nav > .conteudo-nav{
+    flex-grow: 1;
     display: flex;
-    min-width: 1070px;
+    max-width: 1070px;
     padding: 10px;
     justify-content: space-between;
 }
@@ -81,7 +84,7 @@ menu > img{
     align-items: center;
 }
 menu p{
-    position: relative;
+    display: block;
     font-size: 12px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -187,7 +190,6 @@ menu p{
 }
 .container-box{
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     margin: auto;
@@ -218,7 +220,37 @@ menu p{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-position-x: 150%;
-    background-position-y: 150%;
+    background-position-y: 140%;
+}
+.box-triangulo{
+    min-height: 300px;
+    padding: 30px;
+    background-color: var(--escuro);
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url(../imagens/triangulo.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position-x: 120%;
+    background-position-y: 125%;
+}
+.box-quadrado{
+    min-height: 300px;
+    padding: 30px;
+    background-color: var(--escuro);
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url(../imagens/quadrado.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position-x: 130%;
+    background-position-y: 170%;
 }
 .container p{
     display: block;
@@ -460,8 +492,7 @@ menu p{
 footer{
     background-color: #222222;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 100vw;
 }
@@ -469,6 +500,7 @@ footer>p{
     color: white;
     font-size: 0.8rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 footer > p > a{
     color: var(--cor-vermelho)
@@ -478,12 +510,17 @@ footer > p > a:hover{
 }
 .container-footer{
     display: flex;
-    min-width: 1070px;
+    min-width: 100%;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
+    height: 100%;
+    padding: 0px 25px;
+}
+.redes-sociais{
+    display: flex;
 }
 .redes-sociais > a > img{
+    display: block;
     width: 30px;
     margin: 6px;
 }
